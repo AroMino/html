@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @keyframes rotateAndTranslate {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(100px) translateX(100px);
+    }
+    100% {
+      transform: translateY(200px) translateX(0);
+    }
+  }
+
+  .animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: rotateAndTranslate 4s linear infinite alternate;
+  }
+</style>
+<title>Animation Example</title>
+</head>
+<body>
+  <div class="animated-element"></div>
+</body>
+</html>
