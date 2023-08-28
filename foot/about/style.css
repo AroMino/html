@@ -1,0 +1,167 @@
+.fond{
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+}
+
+.bar{
+    background-color:rgb(218, 165, 32, 0.4);
+    padding:0.5vw;
+    width:98vw;
+    backdrop-filter: blur(10px);
+    display:flex;
+    border-top-left-radius:4vw;
+    border-bottom-left-radius:4vw;
+    z-index:5;
+    opacity:0;
+    transform: translateX(20vw);
+    animation: apparition 1s 0.5s ease-out forwards;
+}
+
+.icon{
+    opacity:1;
+    width:4.55vw;
+    height: 4.55vw;
+    margin-left: 0.25vw;
+    margin-top: 0.095vw;
+    animation: icone 5s ease-in-out infinite;
+}
+
+.bouton{
+    margin-left:40vw;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lien{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    margin:1vw 3vw 1vw 3vw;
+    font-size: 2vw;
+}
+
+.titre {
+    color:goldenrod;
+    margin:3vw 0vw 2vw 15vw;
+    font-size:5vw;
+    font-family:Courier;
+    font-weight:bolder;
+    opacity:0;
+    transform: translateX(5vw);
+    animation: apparition 0.4s 0.8s ease-out forwards;
+    line-height: 6vw;
+}
+
+@keyframes apparition {
+    100% {
+        opacity:1;
+        transform:none;
+    }
+}
+
+@keyframes icone{
+    from{
+        transform:translateX(20vw) rotateZ(540deg) ;
+    }
+    50%{
+        transform:translateX(0vw) rotateZ(0deg) ;
+    }
+    to{
+        transform:translateX(20vw) rotateZ(540deg) ;
+    }
+}
+
+.contenu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:max-content;
+}
+
+.text{
+    margin:0vw 10vw 0vw 7vw;
+    width:50vw;
+}
+
+.paragraphe{
+    color:white
+}
+
+.box2{
+    align-self: center;
+    border:0.5vw solid goldenrod;
+    border-radius: 5vw;
+    width:20vw;
+    height:30vw;
+    animation:anim_photo 20s linear infinite forwards;
+}
+@keyframes anim_photo{
+    100%,0%{
+        opacity:1;
+        background-image: url(zidane5.jpg);
+        background-size: 100%;
+    } 
+    15%{
+        opacity:1;
+        background-image: url(zidane5.jpg);
+        background-size: 100%;
+    }
+    17%{
+        opacity:0;
+        
+    }
+    20%{
+        background-image: url(ronaldinho.jpg);
+        background-size: 100%;
+        opacity:1;
+    }
+    35%{
+        opacity:1;
+        background-image: url(ronaldinho.jpg);
+        background-size: 100%;
+    }
+    37%{
+        opacity:0;
+    }
+    
+    40%{
+        opacity:1;
+        background-image: url(maradona1.jpg);
+        background-size: 100%;
+    }
+    55%{
+        opacity:1;
+        background-image: url(maradona1.jpg);
+        background-size: 100%;
+    }
+    57%{
+        opacity:0;
+    }
+    60%{
+        opacity:1;
+        background-image: url(maldini.jpg);
+        background-size: 100%;
+    }
+    75%{
+        opacity:1;
+        background-image: url(maldini.jpg);
+        background-size: 100%;
+    }
+    77%{
+        opacity:0;
+    }
+    80%{
+        opacity:1;
+        background-image: url(nazario.jpg);
+        background-size: 100%;
+    }
+    95%{
+        opacity:1;
+        background-image: url(nazario.jpg);
+        background-size: 100%;
+    }
+    97%{
+        opacity:0;
+    }
+}

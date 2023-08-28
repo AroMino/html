@@ -1,4 +1,4 @@
-* {
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -17,13 +17,15 @@
 }
 
 .image_titre{
+    margin-top: 1.7vw;
     height:27vw;
     border-radius:0.7vw;
     box-shadow: 1vw 1vw 6vw rgba(218, 165, 32, 0.4);
     opacity:0;
-    transform: rotateY(90deg);
+    transform: rotateY(90deg) scale(1.2);
     animation: apparition 0.8s 0.5s ease-out forwards;
 }
+
 
 .titre {
     color:goldenrod;
@@ -287,7 +289,7 @@
 
 .texte{
     margin-top:2vw;
-    width:40vw;
+    width:35vw;
     border-radius: 1vw;
     border:0.2vw goldenrod solid;
     opacity:0.6;
@@ -309,9 +311,9 @@ p{
 }
 
 .p_def{  
-    margin:1.2vw 2vw 2vw 2vw;
+    margin:1.5vw 3vw 2vw 3vw;
     color:white;
-    font-size:1.6vw;
+    font-size:1.4vw;
     opacity:0;
 }
 
