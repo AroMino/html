@@ -248,7 +248,7 @@
 
 .image1{
     border:0.2vw goldenrod solid;
-    position:relative;
+    position:absolute;
     top:0vw;
     left:0vw;
     width:16vw;
@@ -257,8 +257,8 @@
 
 .image2{
     border:0.2vw goldenrod solid;
-    position:relative;
-    top:-5vw;
+    position:absolute;
+    top:7vw;
     left:5vw;
     width:16vw;
     border-radius: 1vw;
@@ -266,9 +266,9 @@
 
 .image3{
     border:0.2vw goldenrod solid;
-    position:relative;
-    top:-7vw;
-    left:1vw;
+    position:absolute;
+    top:15vw;
+    left:3vw;
     width:16vw;
     border-radius: 1vw;
     height:10vw;
@@ -334,13 +334,13 @@ h1{
         opacity:1;
         transform:none;
     }
-}
-
-@keyframes icones {
+  }
+  
+  @keyframes icones {
     from{
-
+  
     }
     to{
         transform:rotateY(360deg);
     }
-}
+  }

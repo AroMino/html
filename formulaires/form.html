@@ -11,13 +11,15 @@
         <h2 align="center" >Formulaire d'inscription</h2>
         <p class="warning">Il est illégal de donner de fausses informations ou de dissimuler des informations dans ce
             formulaire</p>
+
         <div class="container_form">
-            <form class="box" action="page.html" method="get">
+            <form class="box" action="page.html" method="post">
                 <div class="box1">
                     <div class="labels_1">
                         <span>Noms :</span>
                         <span>Prénoms :</span>
                         <span>Nationalité :</span>
+                        <span>Genre :</span>
                         <span>Date de naissance :</span>
                         <span>Lieu de naissance :</span>
                         <span>Adresse :</span>
@@ -28,6 +30,11 @@
                         <input type="text" name="noms"/>
                         <input type="text" name="prenoms"/>
                         <input type="text" name="nationalite"/>
+                        <div>
+                            <span>Masculin</span><input type="checkbox" name="m">
+                            <span>Féminin</span><input type="checkbox" name="f"/>
+                        </div>
+                        
                         <input type="date" name="date_de_naissance"/>
                         <input type="text" name="lieu_de_naissance"/>
                         <input type="text" name="adresse"/>
